@@ -1,0 +1,229 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@font-face {
+	font-family: 'Madras';
+	src: url('../fonts/MadrasExtraLight.otf');
+}
+
+/* Generic Styles */
+
+body {
+    background: url(../img/bkgd01.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+}
+
+/* Home Page */
+
+.title h1,h2,h3,h4,h5,h6 {
+ font-family: "Madras", Arial, sans-serif;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+a {
+    color: #cc3300;
+    text-decoration: none;
+}
+
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    min-height: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #c30;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 15px;
+}
+
+.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #f90;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.content {
+    margin: 175px auto;
+    padding: 50px;
+    background-color: rgba(150,150,150, .9);
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #fff;
+    padding: 5px;
+}
+
+.menu a:hover {
+    background-color: #c30;
+}
+
+.menu a:visited {
+    border: none;
+}
+
+.copyright{
+    position: fixed;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 11px;
+    text-align: center;
+   	width:100%;
+    height: 155px; /* '.push' must be the same height as 'footer' */;
+	bottom:0;
+    left: 0;
+}
+
+
+@media (max-width: 960px) {
+  .copyright{
+    position: relative;
+    padding-top: 20px;
+	bottom:0;
+    left: 0;
+}
+}
+
+
+.copyright a {
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+    color: #78a39c;
+}
+
+.copyright li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background:none;
+}
+
+.copyright li a:active,
+.copyrright li a:focus {
+    text-decoration: none;
+}
+
+select {
+    color: #333;
+}
+/* Show side bar at fill width page
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}*/
